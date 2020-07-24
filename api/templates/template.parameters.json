@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "value": "APIMNGR-wappe-prod"
+    },
+    "LinkedTemplatesBaseUrl": {
+      "value": ""
+    },
+    "PolicyXMLBaseUrl": {
+      "value": "policies"
+    },
+    "BackendServiceUrl": {
+      "value": "https://example.com"
+    },
+    "ProductsApiName": {
+      "value": {
+        "unlimited": "product_unlimited_to_be_completed"
+      }
+    },
+    "NamedValues": {
+      "value": {}
+    },
+    "ApiLoggerId": {
+      "value": {
+        "apilog": {
+          "applicationinsights": "<ApplicationInsights Id>",
+          "azuremonitor": "<Azuremonitor Id>"
+        }
+      }
+    }
+  },
+  "variables": {},
+  "resources": [],
+  "outputs": {}
+}
